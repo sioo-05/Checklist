@@ -11,12 +11,6 @@ const mockData = [
       content: "React 공부하기",
       date: new Date().getTime(),
     },
-    {
-      id: 1,
-      isDone: false,
-      content: "빨래하기",
-      date: new Date().getTime(),
-    }
 ];
 
 
@@ -24,7 +18,7 @@ function App() {
 
 
   const [todos, setTodos] = useState(mockData);
-  const idRef = useRef(2);
+  const idRef = useRef(1);
 
   const onCreate = (content) => {
     const newTodo = {
